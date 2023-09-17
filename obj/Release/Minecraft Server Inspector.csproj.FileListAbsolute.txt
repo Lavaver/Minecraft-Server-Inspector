@@ -10,3 +10,6 @@ D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.exe.m
 D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.application
 D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.exe
 D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.pdb
+D:\repos\Minecraft Server Inspector\bin\Release\Octokit.dll
+D:\repos\Minecraft Server Inspector\bin\Release\Octokit.xml
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.csproj.CopyComplete

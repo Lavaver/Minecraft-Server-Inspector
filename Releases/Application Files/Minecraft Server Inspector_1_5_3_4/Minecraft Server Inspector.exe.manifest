@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Minecraft Server Inspector.exe" version="1.5.3.4" publicKeyToken="be34d82344108600" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="b_2f0ea44b5ba497a601b735d096def8d2.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Minecraft Server Inspector" version="1.5.36.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Minecraft Server Inspector.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+             如果想要更改 Windows 用户帐户控制级别，请使用
+             以下节点之一替换 requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 元素将禁用文件和注册表虚拟化。
+            如果你的应用程序需要此虚拟化来实现向后兼容性，则移除此
+            元素。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Minecraft Server Inspector.exe" size="12272">
+      <assemblyIdentity name="Minecraft Server Inspector" version="1.5.36.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UkclOey+JKNUpC3GNPhlxhItxYzsdabOG3FehjX2Tho=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Octokit.dll" size="1292288">
+      <assemblyIdentity name="Octokit" version="7.1.0.0" publicKeyToken="0BE8860AEE462442" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6ZfqpXiCr5XT9AOxcM4780XUtIrznIvOOjPTGYbY9fw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="b_2f0ea44b5ba497a601b735d096def8d2.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WuJGlihU9FRsE4x+0lvt2zpISUB+KOrB/Mx35U2bYIg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Minecraft Server Inspector.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 设计此应用程序与其一起工作且已针对此应用程序进行测试的
+           Windows 版本的列表。取消评论适当的元素，
+           Windows 将自动选择最兼容的环境。 -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=MATEBOOK\Shiwulu Studios" issuerKeyHash="7bc57021d454598d6ea7f82eafca585f31f2684d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7kg2AcQnR2J9q+CXzSZquKX6RemWAgtqCrlY9tYKt8w=</DigestValue></Reference></SignedInfo><SignatureValue>Npgqm2W6yY+AysVFB60z9rxQDKCnTOj1urZtQjvkS1gUYPCv/mJTOoAaMZxYg0j1GUF/tF8UDVyzT2h52teQiixMVbH+wERRO3Csh0K9JATgK0u5UTlJj2neqxUZIz/i3F5lab5v+Oyo78XzqPrv82tj0e5TrzL42+ZJIoSPccs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wnCpHukrgHCaR7epLCFlqvygWS7Oef57EAi726A4lBJOmyFFGgQn3t5br6Od9hX8124wr0/oW97OFsskwK6etSDvMmc7RXLciPBsUhQUXLDDPlm5A4DNyO+cVfC5WWDQ/YeuhjqXhJeQAgQEoiAZhZ1pGSkrBU/2sCtSM3Fod8E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ccb70ad6f658b90a6a0b0296e945faa5b86a26cd97e0ab7d624727c4013648ee" Description="" Url=""><as:assemblyIdentity name="Minecraft Server Inspector.exe" version="1.5.3.4" publicKeyToken="be34d82344108600" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MATEBOOK\Shiwulu Studios</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kTvVQ5Qi58XRSXarWmFA9hi7A6FCSB4Xrc7z3ZOgW3g=</DigestValue></Reference></SignedInfo><SignatureValue>c/q6JbmxRWLNP1jPpe0b8mRsqEbEMemCHbwJEDyZPBAFndxUALdS35/471UmwRANVwhGJmSCFkidi+by87K+KV2syhU8k9HmDoh3xYumBGRkOm2PIWoB+xRj6ch0hpzKuxHnYn98QLNGPjPyctRa0GRHhe4xF6zE2ljHmMQ44IA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wnCpHukrgHCaR7epLCFlqvygWS7Oef57EAi726A4lBJOmyFFGgQn3t5br6Od9hX8124wr0/oW97OFsskwK6etSDvMmc7RXLciPBsUhQUXLDDPlm5A4DNyO+cVfC5WWDQ/YeuhjqXhJeQAgQEoiAZhZ1pGSkrBU/2sCtSM3Fod8E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQVvSZJqRM7a1EjwlagCOf8DANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAATQBBAFQARQBCAE8ATwBLAFwAUwBoAGkAdwB1AGwAdQAgAFMAdAB1AGQAaQBvAHMwHhcNMjMwOTE3MDczMDE3WhcNMjQwOTE2MTMzMDE3WjA7MTkwNwYDVQQDHjAATQBBAFQARQBCAE8ATwBLAFwAUwBoAGkAdwB1AGwAdQAgAFMAdAB1AGQAaQBvAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMJwqR7pK4Bwmke3qSwhZar8oFkuznn+exAIu9ugOJQSTpshRRoEJ97eW6+jnfYV/NduMK9P6FvezhbLJMCunrUg7zJnO0Vy3IjwbFIUFFywwz5ZuQOAzcjvnFXwuVlg0P2HroY6l4SXkAIEBKIgGYWdaRkpKwVP9rArUjNxaHfBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAwad7QxXjlf76FSDPEB5s+RhqkNk0H91Lc7MndnUdOuEhoLVn5OPixMUT1gRRhrFNP/oIjEvxpzXozH+7+V6YEmEAaS3FF0wNOkMhiiAlQLW4tASbSm5F9Yo2n4CbXflqwWDggz9/WGrgJveSgtMYYLtwCuAQUvx9+9MwhcTMv5Q=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,6 +1,10 @@
-﻿using System;
+﻿using Octokit;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
@@ -33,16 +37,43 @@ namespace Minecraft_Server_Inspector
                             break;
                         case "-update":
 
-                            Console.WriteLine("在线更新方法");
-                            Console.WriteLine("-------------------------------------------");
-                            Console.WriteLine("打开发布程序，然后等待程序自动搜索新版本更新即可");
-                            Console.WriteLine("-------------------------------------------");
-                            Console.WriteLine("离线更新方法");
-                            Console.WriteLine("在另一个设备上用浏览器进入 http://game.xltv.top:14514/s/vJSD 从网盘中下载新的离线安装程序，并使用 USB 导入到此设备进行替换安装");
+                            // GitHub仓库信息  
+                            string owner = "lavaver";
+                            string repository = "Minecraft-Server-Inspector";
+
+                            // 创建GitHub客户端  
+                            var gitHubClient = new GitHubClient(new ProductHeaderValue("Auto_Update"))
+                            {
+                                Credentials = new Credentials("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")
+                            };
+
+                            // 获取仓库的最新版本  
+                            var latestRelease = gitHubClient.Repository.Release.GetAll(owner, repository).Result.OrderByDescending(r => r.PublishedAt).FirstOrDefault();
+
+                            if (latestRelease != null)
+                            {
+                                Console.WriteLine("已检测到新版本！正在下载");
+                                // 下载最新版本  
+                                var downloadLink = latestRelease.Assets.First().BrowserDownloadUrl;
+                                WebClient webClient = new WebClient();
+                                webClient.DownloadFile(downloadLink, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Release.exe"));
+                                // 自动打开安装程序  
+                                ProcessStartInfo startInfo = new ProcessStartInfo();
+                                startInfo.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Release.exe");
+                                Process.Start(startInfo);
+                                Console.WriteLine("已检测到新版本并下载完毕！请在打开的安装程序上覆盖安装，本程序会自动退出...");
+
+                                Environment.Exit(0);
+                            }
+                            else
+                            {
+                                Console.WriteLine("当前已是最新构建版本，无需更新！");
+                            }
+
                             Environment.Exit(0);
                             break;
                     default:
-                            Console.WriteLine($"未知参数：{arg} 。请使用 -updatelog 参数查看更新日志，或者正常启动。");
+                            Console.WriteLine($"未知参数：{arg} 。请使用正确的参数，或者正常启动。");
                             Environment.Exit(0);
                             break;
                     }
@@ -52,7 +83,7 @@ namespace Minecraft_Server_Inspector
             Console.WriteLine("Minecraft Server Inspector - 一款 Minecraft 服务器全自动检查器");
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine("使用 -watchnew 参数查看更新日志。");
-            Console.WriteLine("使用 -update 参数获取有关更新软件的方法");
+            Console.WriteLine("使用 -update 参数获取有关更新");
             Console.WriteLine("-------------------------------------------");
             Console.Write("请输入服务器地址 - ");
             string serverAddress = Console.ReadLine(); // 替换用户输入服务器地址  
