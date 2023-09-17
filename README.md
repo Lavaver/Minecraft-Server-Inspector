@@ -1,4 +1,4 @@
-# Minecraft-Server-Inspector
+.# Minecraft-Server-Inspector
 这是一款基于 C# 初三作者本人写出来的 Shit 山代码的 Minecraft 服务器全自动检查器（大悲）
 
 高效、简洁而优雅（**美丽のCS世界里出现 Console 简直是太棒啦！**）
