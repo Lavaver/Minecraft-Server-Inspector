@@ -1,0 +1,12 @@
+D:\repos\Minecraft Server Inspector\bin\Release\Minecraft Server Inspector.exe.config
+D:\repos\Minecraft Server Inspector\bin\Release\Minecraft Server Inspector.exe.manifest
+D:\repos\Minecraft Server Inspector\bin\Release\Minecraft Server Inspector.application
+D:\repos\Minecraft Server Inspector\bin\Release\Minecraft Server Inspector.exe
+D:\repos\Minecraft Server Inspector\bin\Release\Minecraft Server Inspector.pdb
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.csproj.AssemblyReference.cache
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.csproj.CoreCompileInputs.cache
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.TrustInfo.xml
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.exe.manifest
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.application
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.exe
+D:\repos\Minecraft Server Inspector\obj\Release\Minecraft Server Inspector.pdb
