@@ -44,7 +44,7 @@ namespace Minecraft_Server_Inspector
                             // 创建GitHub客户端  
                             var gitHubClient = new GitHubClient(new ProductHeaderValue("Auto_Update"))
                             {
-                                Credentials = new Credentials("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")
+                                Credentials = new Credentials("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")
                             };
 
                             // 获取仓库的最新版本  
